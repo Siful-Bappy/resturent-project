@@ -15,7 +15,7 @@
 .app-navbar-logo img{
     width: 150px;
 }
-.app-navbar .app-navbar-links{
+.app-navbar-links{
     flex: 1;
     display: flex;
     justify-content: center;
@@ -45,4 +45,40 @@
     width: 1px;
     height: 30px;
     background-color: goldenrod;
+}
+
+
+.app-navbar-smallscreen{
+    display: none;
+}
+.app-navbar-smallscreen-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    transition: 0.5s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 5;
+}
+.app-navbar-smallscreen-overlay .overlay-close{
+    font-size: 27px;
+    color: gold;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+@media screen and (max-width: 1150px) {
+    .app-navbar-links{
+        display: none;
+    }
+    .app-navbar-smallscreen{
+        display: flex;
+    }
 }
