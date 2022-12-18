@@ -1,5 +1,48 @@
 .app-navbar{
     width: 100%;
     display: flex;
-    border: 2px solid black;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: white;
+    padding: 1rem 2rem;
+}
+.app-navbar-logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.app-navbar-logo img{
+    width: 150px;
+}
+.app-navbar .app-navbar-links{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-navbar-links li{
+    margin: 0px 1rem;
+    cursor: pointer;
+}
+.app-navbar-links li:hover{
+    color: rgb(193, 191, 191);
+}
+.app-navbar-login{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.app-navbar-login a{
+    margin: 0 1rem;
+    transition: 0.5s ease;
+}
+.app-navbar-login a:hover{
+    border-bottom: 1px solid gold;
+}
+.app-navbar-login div{
+    width: 1px;
+    height: 30px;
+    background-color: goldenrod;
 }
