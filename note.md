@@ -1,0 +1,10 @@
+## Layout
+1. Navbar
+2. AboutUs
+3. SpecialMenu
+4. Chef
+5. Intro
+6. Laurels
+7. Gallery
+8. FindUs
+9. Footer
